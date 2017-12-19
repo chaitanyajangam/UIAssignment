@@ -1,19 +1,25 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { CreatepersonComponent } from './components/createperson/createperson.component';
+
 import {NavbarComponent} from './components/navbar/navbar.component';
-import {PersontableComponent} from './components/persontable/persontable.component';
+
 import {HomeComponent} from './components/home/home.component';
-import {EditpersonComponent} from './components/editperson/editperson.component';
+import {LoginComponent} from './components/login/login.component';
+import {RegisterComponent} from './components/register/register.component';
+import {ProfileComponent} from './components/profile/profile.component';
+
+
+
 
 const appRoutes: Routes = [
  // { path: '', component: AppComponent },
   {path: '', component: HomeComponent},
-  {path: 'createperson', component: CreatepersonComponent},
-  {path: 'editperson', component: EditpersonComponent},
-  {path: 'persontable', component: PersontableComponent},
+  {path: 'login', component: LoginComponent, /* User must be logged in to view this route*/},
+  {path: 'register', component: RegisterComponent, /* User must be logged in to view this route*/},
+  {path: 'profile', component: ProfileComponent, /* User must be logged in to view this route*/},
+
  
-  { path: '**', component: CreatepersonComponent }
+  //{ path: '**', component: CreatepersonComponent }
 ];
 
 @NgModule({

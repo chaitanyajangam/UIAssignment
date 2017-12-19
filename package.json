@@ -24,9 +24,20 @@
   },
   "homepage": "https://github.com/chaitanyajangam/meanstack-with-angular-2#readme",
   "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "mongoose": "^4.12.4"
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.12.4",
+    "mongoose-unique-validator": "^1.0.6",
+    "ng2-toastr": "^4.1.2",
+    "password-hash": "^1.2.2",
+    "toastr": "^2.1.4",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.6.1"
   }
 }
